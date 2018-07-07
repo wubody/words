@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>    
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >    
+<mapper namespace="cn.edu.dao.ArticleDao" >      
+    <resultMap id="BaseResultMap" type="cn.edu.bean.Article">    
+        <result column="id" property="id" jdbcType="INTEGER" />    
+        <result column="userId" property="userId" jdbcType="VARCHAR" />
+        <result column="userName" property="userName" jdbcType="VARCHAR" />
+        <result column="time" property="time" jdbcType="VARCHAR" />     
+        <result column="title" property="title" jdbcType="VARCHAR" />    
+        <result column="text" property="text" jdbcType="VARCHAR" />    
+        <result column="love" property="love" jdbcType="INTEGER" />
+        <result column="comment" property="comment" jdbcType="INTEGER" />       
+    </resultMap>   
+    <sql id="Base_Column_List" >
+       id,userId,userName,time,title,text,love,comment
+     </sql>
+     
+     <!-- 查询所有文章-->    
+    <select id="getAllArticle" resultMap="BaseResultMap">    
+        select    
+        <include refid="Base_Column_List" />    
+        from article  order by time desc
+    </select> 
+    
+    <!-- 按id查询文章 -->
+    <select id="getArticleByPrimaryKey" resultMap="BaseResultMap">    
+        select    
+        <include refid="Base_Column_List" />    
+        from article 
+        where id= #{id,jdbcType=INTEGER} 
+    </select> 
+    
+    <!-- 按用户id查询文章  -->
+    <select id="getUserArticle" resultMap="BaseResultMap">    
+        select    
+        <include refid="Base_Column_List" />    
+        from article  
+        where userId = #{userId,jdbcType=VARCHAR} order by time desc
+    </select> 
+    
+    <!-- 按文章标题查询文章  -->
+    <select id="getArticleByTitle" resultMap="BaseResultMap">    
+        select    
+        <include refid="Base_Column_List" />    
+        from article  
+        where title = #{title,jdbcType=VARCHAR} order by time desc
+    </select> 
+    
+     <!-- 插入文章 -->    
+    <insert id="insertArticle" parameterType="cn.edu.bean.Article">    
+        insert into article (
+        userId,userName,time,title,text,love,comment
+        )
+        values (
+        #{userId,jdbcType=VARCHAR},
+        #{userName,jdbcType=VARCHAR},
+        #{time,jdbcType=VARCHAR},
+        #{title,jdbcType=VARCHAR},
+        #{text,jdbcType=VARCHAR},
+        #{love,jdbcType=INTEGER},
+        #{comment,jdbcType=INTEGER})
+    </insert>
+    <!-- 删除用户 -->    
+    <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">    
+        delete from article    
+        where id = #{id,jdbcType=INTEGER}      
+    </delete>  
+    <delete id="deleteByUserId" parameterType="java.lang.String">    
+        delete from article    
+        where userId = #{userId,jdbcType=VARCHAR}      
+    </delete>
+    <!-- 更新用户 -->    
+    <update id="updateArticle" parameterType="cn.edu.bean.Article" >      
+        update article      
+        <set >           
+            userId = #{userId},  
+            userName=#{userName},   
+            time=#{time},    
+            title = #{title},      
+            text = #{text},      
+            love = #{love},  
+            comment=#{comment}    
+        </set>      
+        where id = #{id}     
+    </update> 
+</mapper>

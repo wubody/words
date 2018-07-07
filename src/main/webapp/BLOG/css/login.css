@@ -1,0 +1,233 @@
+body
+{
+	padding:0; 
+	margin:0;
+}
+
+div
+{
+	display: block;
+	font-family: Î¢ÈíÑÅºÚ;
+}
+a
+{
+	text-decoration: none;
+	display: block;
+}
+
+a:visited
+{
+	color:black;
+}
+
+.bg
+{
+	width: 100%;
+
+	background-color: #f3f3f3;
+}
+
+.login
+{
+	position: absolute;
+	top:100px;
+	background-color: white;
+	width: 432px;
+	height: 600px;
+	border-radius: 5px 5px 5px 5px;
+	border: 0px solid rgba(0, 0, 0, 0);
+	box-shadow:0 2px 2px rgba(0, 0, 0, 0.5)
+}
+
+.login .head
+{
+	border-radius: 5px 5px 0px 0px;
+	margin-top: 0px;
+	text-align: center;
+	width: 432px;
+	height: 225px;
+	color: white;
+	background-color: #0f88eb;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+.login .head .logo
+{
+	margin: 0;
+	padding-top: 48px;
+	line-height: 56px;
+	text-align: center;
+	font-size: 72px;
+
+}
+
+.login .head .slogan
+{
+	font-size: 24px;
+	
+	
+}
+
+.login .head .input
+{
+	height: 280px;
+}
+
+.login .input .username
+{
+	font-size: 16px;
+	margin-left: 66px;
+	width: 300px;
+	height: 48px;
+	margin-top: 36px;
+	border-radius: 5px 5px 5px 5px;
+	border: 1px solid #0f88eb;
+}
+
+.login .input .password
+{
+	font-size: 16px;
+	margin-left: 66px;
+	width: 300px;
+	height: 48px;
+	margin-top: 24px;
+	border-radius: 5px 5px 5px 5px;	
+	border: 1px solid #0f88eb;
+}
+
+.login .input button
+{
+	background-color: #0f88eb;
+	height: 50px;
+	width: 325px;
+	border-radius: 2px 2px 2px 2px;
+	margin:0 auto;
+	margin-top: 32px;
+}
+.login .input .button a
+{
+	color: white;
+	font-size: 16px;
+	line-height: 50px;
+	text-align: center
+
+}
+
+.login .toSignup
+{
+	border-radius: 0px 0px 5px 5px;
+	border-top: 1px solid #e7eaf1;
+	position: absolute;
+	bottom: 0;
+	height: 60px;
+	width:432px;
+	background-color: #f7f8fa;
+}
+
+.login .toSignup a
+{
+	line-height: 50px;
+	color:#0f88eb;
+	text-align: center;
+}
+
+
+.signup
+{
+	position: absolute;
+	top:30px;
+	background-color: white;
+	width: 432px;
+	height: 600px;
+	border-radius: 5px 5px 5px 5px;
+	border: 0px solid rgba(0, 0, 0, 0);
+	box-shadow:0 2px 2px rgba(0, 0, 0, 0.5);
+	display: none;
+}
+
+.signup .head
+{
+	border-radius: 5px 5px 0px 0px;
+	margin-top: 0px;
+	text-align: center;
+	width: 432px;
+	height: 225px;
+	color: white;
+	background-color: #0f88eb;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+.signup .head .logo
+{
+	margin: 0;
+	padding-top: 48px;
+	line-height: 56px;
+	text-align: center;
+	font-size: 72px;
+
+}
+
+.signup .head .slogan
+{
+	font-size: 24px;
+	
+	
+}
+
+.signup .head .input
+{
+	height: 280px;
+}
+
+.signup .input .username
+{
+	font-size: 16px;
+	margin-left: 66px;
+	width: 300px;
+	height: 48px;
+	margin-top: 36px;
+	border-radius: 5px 5px 5px 5px;
+	border: 1px solid #0f88eb;
+}
+
+.signup .input .password
+{
+	font-size: 16px;
+	margin-left: 66px;
+	width: 300px;
+	height: 48px;
+	margin-top: 24px;
+	border-radius: 5px 5px 5px 5px;	
+	border: 1px solid #0f88eb;
+}
+
+.signup .input button
+{
+	background-color: #0f88eb;
+	height: 50px;
+	width: 325px;
+	border-radius: 2px 2px 2px 2px;
+	margin:0 auto;
+	margin-top: 32px;
+	border:0;
+}
+
+
+.signup .toLogin
+{
+	border-radius: 0px 0px 5px 5px;
+	border-top: 1px solid #e7eaf1;
+	position: absolute;
+	bottom: 0;
+	height: 60px;
+	width:432px;
+	background-color: #f7f8fa;
+}
+
+.signup .toLogin a
+{
+	line-height: 50px;
+	color:#0f88eb;
+	text-align: center;
+}
+

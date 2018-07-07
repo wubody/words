@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>    
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >    
+<mapper namespace="cn.edu.dao.UserDao" >      
+    <resultMap id="BaseResultMap" type="cn.edu.bean.User">    
+        <result column="userId" property="userId" jdbcType="VARCHAR" />    
+        <result column="userPassword" property="userPassword" jdbcType="VARCHAR" />
+        <result column="userName" property="userName" jdbcType="VARCHAR" />     
+        <result column="userSex" property="userSex" jdbcType="VARCHAR" />    
+        <result column="userType" property="userType" jdbcType="INTEGER" /> 
+        <result column="article" property="article" jdbcType="INTEGER" />      
+    </resultMap>   
+    <sql id="Base_Column_List" >
+    userId, userPassword,userName,userSex,userType,article
+     </sql>
+     <!-- 查询用户-->    
+    <select id="getAllUser" resultMap="BaseResultMap">    
+        select    
+        <include refid="Base_Column_List" />    
+        from user   
+    </select> 
+    <!-- 通过主键获取用户 -->
+    <select id="getUserByPrimaryKey" resultMap="BaseResultMap">    
+        select    
+        <include refid="Base_Column_List" />    
+        from user 
+        where userId= #{userId,jdbcType=VARCHAR} 
+    </select> 
+    <!-- 通过用户名获取用户 -->
+    <select id="getUserByUserName" resultMap="BaseResultMap">    
+        select    
+        <include refid="Base_Column_List" />    
+        from user 
+        where userName= #{userName,jdbcType=VARCHAR} 
+    </select> 
+     <!-- 插入用户 -->    
+    <insert id="insertUser" parameterType="cn.edu.bean.User">    
+        insert into user (
+        userId, userPassword,userName,userSex,userType,article
+        )
+        values (
+        #{userId,jdbcType=VARCHAR},
+        #{userPassword,jdbcType=VARCHAR},
+        #{userName,jdbcType=VARCHAR},
+        #{userSex,jdbcType=VARCHAR},
+        #{userType,jdbcType=INTEGER},
+        #{article,jdbcType=INTEGER})
+    </insert>
+    <!-- 删除用户 -->    
+    <delete id="deleteByPrimaryKey" parameterType="java.lang.String">    
+        delete from user    
+        where userId= #{userId,jdbcType=VARCHAR}      
+    </delete>  
+    <!-- 更新用户 -->    
+    <update id="updateUser" parameterType="cn.edu.bean.User" >      
+        update user      
+        <set>      
+            userPassword=#{userPassword},      
+            userName = #{userName},                                  
+            userSex = #{userSex},                               
+            userType = #{userType},
+             article = #{userType}  
+                          
+        </set>      
+        where userId = #{userId}     
+    </update> 
+</mapper>

@@ -1,0 +1,192 @@
+﻿body
+{
+	padding:0; 
+	margin:0;
+}
+
+div
+{
+	display: block;
+	font-family: 微软雅黑;
+}
+a
+{
+	text-decoration: none;
+	display: block;
+}
+
+a:visited
+{
+	color:black;
+}
+
+.navBG
+{
+	width: 100%;
+	height: 56px;
+	background-color: white;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+	position: fixed;
+	top: 0px;
+	z-index: 10000;
+}
+
+.navBG .nav
+{
+	width: 1000px;
+	height: 56px;
+	margin: 0 auto;	
+}
+
+.navBG .nav .logo
+{
+	font-size: 36px;
+	line-height: 52px;
+	color: #0f88eb;
+	float: left;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	text-align: center;
+}
+
+.navBG .nav .search
+{
+	width: 600px;
+	height: 52px;
+	float: left;
+	margin-left: 90px;
+}
+
+.navBG .nav .search input
+{
+	width: 400px;	
+	height: 34px;
+	border-radius: 2px 2px 2px 2px;
+	border: 1px solid #e7eaf1;
+	margin-top:8px;
+	background-color: #f3f3f3;
+	margin-left: 8px;
+}
+
+.navBG .nav .search select
+{
+	border: 1px solid #e7eaf1;
+	width: 64px;
+	height: 38px;
+	
+}
+
+.navBG .nav .search button
+{
+	background-color: #0f88eb;
+	border: 1px solid #0f88eb;
+	border-radius: 2px 2px 2px 2px;
+	width: 64px;
+	height: 36px;
+	color: white;	
+	margin-left: 12px;
+}
+
+.navBG .nav .search button:hover
+{
+	transition: background-color 0.5s;
+	background-color:#0867b4;
+}
+
+.navBG .nav .setContainer
+{
+	width: 200px;
+	height: 56px;
+	float: right;
+}
+
+.navBG .nav .setContainer button
+{
+	background-color: white;	
+	border: 0;
+	width: 100px;
+	height: 56px;
+	color: #8590a6;	
+	line-height: 52px;
+	text-align: center;
+	font-size: 15px;
+	float: left;
+}
+
+
+
+.bg
+{
+	width: 100%;
+	height: 100%;
+	background: #f3f3f3;
+	position: fixed;
+	z-index: -1;
+}
+
+.container
+{
+	width: 1000px;
+	margin: 0 auto;	
+	position: relative;
+	height: 700px;
+	margin-top: 56px;
+	background-color: white;
+	padding: 20px;
+	border-radius: 2px;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+
+}
+
+.container .title
+{
+	width: 1000px;
+}
+
+.container .title p
+{
+	height: 12px;
+}
+
+.container .title input
+{
+	width: 700px;	
+	height: 56px;
+	border-radius: 2px 2px 2px 2px;
+	border: 1px solid #e7eaf1;
+	margin-top:8px;
+	background-color: #f3f3f3;
+	font-size: 24px;
+	
+}
+
+.container .article
+{
+	width: 1000x;
+}
+
+.container .article textarea
+{
+	width: 700px;
+	height: 400px;
+	-webkit-appearance: none;
+	box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+	resize: none;
+	border: 1px solid #0f88eb;
+	border-radius: 2px 2px 2px 2px;
+	padding:0px;
+	background-color: #f3f3f3;
+	font-size: 16px;
+	float: left;
+}
+
+.container button
+{
+	background-color: #0f88eb;
+	border: 1px solid #0f88eb;
+	border-radius: 2px 2px 2px 2px;
+	width: 700px;
+	height: 56px;
+	color: white;	
+	font-size: 24px;
+	margin-top: 36px;
+}

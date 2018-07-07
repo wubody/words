@@ -1,0 +1,301 @@
+﻿body
+{
+	padding:0; 
+	margin:0;
+}
+
+div
+{
+	display: block;
+	font-family: 微软雅黑;
+}
+a
+{
+	text-decoration: none;
+	display: block;
+}
+
+a:visited
+{
+	color:black;
+}
+
+.navBG
+{
+	width: 100%;
+	height: 56px;
+	background-color: white;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+	position: fixed;
+	top: 0px;
+	z-index: 10000;
+}
+
+.navBG .nav
+{
+	width: 1000px;
+	height: 56px;
+	margin: 0 auto;	
+}
+
+.navBG .nav .logo
+{
+	font-size: 36px;
+	line-height: 52px;
+	color: #0f88eb;
+	float: left;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	text-align: center;
+}
+
+.navBG .nav .search
+{
+	width: 600px;
+	height: 52px;
+	float: left;
+	margin-left: 90px;
+}
+
+.navBG .nav .search input
+{
+	width: 400px;	
+	height: 34px;
+	border-radius: 2px 2px 2px 2px;
+	border: 1px solid #e7eaf1;
+	margin-top:8px;
+	background-color: #f3f3f3;
+	margin-left: 8px;
+}
+
+.navBG .nav .search select
+{
+	border: 1px solid #e7eaf1;
+	width: 64px;
+	height: 38px;
+	
+}
+
+.navBG .nav .search button
+{
+	background-color: #0f88eb;
+	border: 1px solid #0f88eb;
+	border-radius: 2px 2px 2px 2px;
+	width: 64px;
+	height: 36px;
+	color: white;	
+	margin-left: 12px;
+}
+
+.navBG .nav .search button:hover
+{
+	transition: background-color 0.5s;
+	background-color:#0867b4;
+}
+
+.navBG .nav .setContainer
+{
+	width: 200px;
+	height: 56px;
+	float: right;
+}
+
+.navBG .nav .setContainer button
+{
+	background-color: white;	
+	border: 0;
+	width: 100px;
+	height: 56px;
+	color: #8590a6;	
+	line-height: 52px;
+	text-align: center;
+	font-size: 15px;
+	float: left;
+}
+
+
+
+.bg
+{
+	width: 100%;
+	height: 100%;
+	background: white;
+	position: fixed;
+	z-index: -1;
+}
+
+.container
+{
+	width: 1000px;
+	margin: 0 auto;	
+	position: relative;
+	margin-top: 56px;
+	
+
+}
+
+.container .title
+{
+	width: 1000px;
+	font-size: 24px;
+	font-weight: 600;
+	color:black;
+	float: left;
+	margin-top: 36px;
+}
+
+.container .username
+{
+	float: left;
+	height: 20px;
+	font-size: 14px;
+	color: gray;
+	margin-top: 8px;
+}
+
+.container .time
+{
+	width: 700px;
+	height: 20px;
+	margin-left: 8px;
+	float: left;
+	font-size: 14px;
+	color: gray;
+	margin-top: 8px;
+}
+
+.container .titleline
+{
+	float: left;
+	width: 700px;
+	margin-top: 4px;
+	color: rgba(153, 152, 152, 0.3);
+}
+
+.container .article
+{
+	position: relative;
+	width: 700px;
+	left: 0px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	font-size: 16px;
+	top: 56px;
+	text-align: left;
+}
+
+.comment
+{
+	position: relative;
+	top:128px;
+	width: 700px;
+	float: left;
+}
+
+.comment .commentTitle
+{
+	font-size: 25px;
+	font-weight: 600;
+}
+
+.comment .line
+{
+width: 700px;
+float: left
+}
+
+.comment .editComment
+{
+margin-top: 36px;
+}
+
+.comment .editComment textarea
+{
+	width: 700px;
+	height: 100px;
+	-webkit-appearance: none;
+	box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+	resize: none;
+	border: 1px solid #0f88eb;
+	border-radius: 2px 2px 2px 2px;
+	padding:0px;
+	background-color: #f3f3f3;
+	font-size: 16px;
+	float: left;
+}
+
+.comment .editComment .commentUser
+{
+	float: left;
+	height: 36px;
+	line-height: 36px;
+	font-size: 14px;
+	color: gray;
+	margin-top: 8px;
+	width: 300px;
+}
+
+.comment .editComment button
+{
+	background-color: #0f88eb;
+	border: 1px solid #0f88eb;
+	border-radius: 2px 2px 2px 2px;
+	width: 64px;
+	height: 36px;
+	color: white;
+	margin-top: 8px;
+	float: right;
+}
+
+.comment .commentList
+{
+	float: left;
+	width: 700px;
+	margin-top: 36px;
+
+}
+
+.comment .commentList .commentCard
+{
+	width: 700px;
+	padding-bottom: 20px;
+	padding-top: 20px;
+	margin-bottom: 56px;
+}
+
+.comment .commentList .commentCard .commentText
+{
+	text-align: left;
+	width: 700px;
+}
+
+.comment .commentList .commentCard .username
+{
+	float: left;
+	height: 36px;
+	line-height: 36px;
+	font-size: 14px;
+	color: gray;
+	margin-top: 8px;
+	width: 300px;
+}
+.comment .commentList .commentCard .time
+{
+	float: right;
+	height: 36px;
+	line-height: 36px;
+	font-size: 14px;
+	color: gray;
+	margin-top: 8px;
+	width: 100px
+}
+
+.comment .commentList .commentCard .titleline
+{
+	margin-top: 36px;
+	width: 700px;
+	color: #f3f3f3;
+}
+
+
+
+
